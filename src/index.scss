@@ -1,0 +1,10 @@
+@import "./scss/index.scss";
+body {
+  margin: 0;
+  font-family: $font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3, h4, h5, p, span, div,button{
+  font-family: $font;
+}

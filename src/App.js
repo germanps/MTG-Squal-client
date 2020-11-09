@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import client from './config/apollo';
+import { ApolloProvider } from '@apollo/client';
+import { Button } from 'semantic-ui-react'
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ApolloProvider client={client}>
+      <div className="App">
+        <h1>App</h1>
+        <Button className="btn" primary>Botón</Button>
+        <Button secondary>Botón</Button>
+      </div>
+    </ApolloProvider>
   );
 }
 
-export default App;
+

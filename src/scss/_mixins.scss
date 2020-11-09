@@ -1,0 +1,15 @@
+@mixin flex($w, $d, $j, $a, $wr: unset) {
+    width: $w;
+    display: flex;
+    flex-direction: $d;
+    justify-content: $j;
+    align-items: $a;
+    flex-wrap: $wr;
+  }
+  
+  @mixin title($size, $color, $align, $mb){
+    font-size: $size;
+    color: $color;
+    text-align: $align;
+    margin-bottom: $mb;
+  }

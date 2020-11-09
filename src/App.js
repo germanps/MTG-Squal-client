@@ -5,6 +5,7 @@ import { getToken, decodeToken, removeToken } from './utils/token';
 import AuthContext from './context/AuthContext'
 import { ToastContainer } from 'react-toastify';
 import Auth from './pages/Auth'
+import Home from './pages/Home'
 
 
 export default function App() {
@@ -47,7 +48,7 @@ export default function App() {
   return (
     <ApolloProvider client={client}>
       <AuthContext.Provider value={authData} >
-        {!auth ? <Auth /> : <p>estas logueado</p>}
+        {!auth ? <Auth /> : <Home />}
         <ToastContainer
           position="top-right"
           autoClose={5000}

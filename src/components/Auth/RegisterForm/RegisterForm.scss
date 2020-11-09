@@ -1,0 +1,15 @@
+@import '../../../scss/index.scss';
+
+.register-form {
+    width: 100%;
+    &__title {
+      @include title($font-size, $elm, center, 20px);
+    }
+    &__form {
+      input {
+        padding: 13px 15px !important;
+        background-color: $background-grey !important;
+      }
+    }
+  }
+  

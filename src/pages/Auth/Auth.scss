@@ -1,5 +1,41 @@
 @import "../../scss/index.scss";
 
-.auth{
-    color: $font-primary;
-}
+.ui.container.auth{
+    @include flex(100%, column, center, center);
+    height: 100vh;
+    background-color: $background-grey;
+    margin: 0 !important;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    img {
+        width: 100px;
+    }
+    .container-form {
+        width: 400px;
+        max-width: 100%;
+        background-color: $background-light;
+        padding: 20px 50px;
+        border: 1px solid $border-grey;
+        margin-top: 50px;
+        border-radius: 5px;
+    }
+    .change-form {
+        margin-top: 10px;
+        width: 400px;
+        max-width: 100%;
+        background-color: $background-light;
+        padding: 20px 50px;
+        border: 1px solid $border-grey;
+        text-align: center;
+        border-radius: 5px;
+        span {
+          color: $mexican;
+          font-weight: bold;
+          margin-left: 5px;
+          &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+      }
+} 

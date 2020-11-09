@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Image } from 'semantic-ui-react'
 import RegisterForm from '../../components/Auth/RegisterForm'
+import LoginForm from '../../components/Auth/LoginForm'
 import logo from '../../assets/svg/header-logo.svg'
 import './Auth.scss';
 
@@ -10,7 +11,7 @@ export default function Auth() {
         <Container fluid className="auth">
             <Image src={logo} />
             <div className="container-form">
-                {showLogin ? <p>Formulario de Login</p> : <RegisterForm setShowLogin={setShowLogin} />}
+                {showLogin ? <LoginForm /> : <RegisterForm setShowLogin={setShowLogin} />}
             </div>
             <div className="change-form">
                 <p>

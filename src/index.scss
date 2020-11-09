@@ -2,9 +2,26 @@
 body {
   margin: 0;
   font-family: $font;
+  font-size: $font-size;
+  min-width: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 h1, h2, h3, h4, h5, p, span, div,button{
   font-family: $font;
+}
+
+
+//global classes
+.ui.form {
+  .btn-submit {
+    width: 100%;
+    background-color: $elm;
+    color: $font-light;
+  }
+  .submit-error{
+    color: $mexican;
+    text-align: center;
+    margin: 20px 0 0 0; 
+  }
 }
